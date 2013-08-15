@@ -1,3 +1,3 @@
 base:
   '*':
-    - core
+    - check_mk_agent
