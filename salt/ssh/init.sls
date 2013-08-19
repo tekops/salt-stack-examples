@@ -5,9 +5,9 @@ openssh-client:
     {% elif grains['os_family'] == 'RedHat' %}
     - name: openssh-clients
     {% endif %}
-  
-my_key==:
+
+tekops_key:
   ssh_auth:
     - present
     - user: root
-    - enc: ssh-rsa
+    - source: salt://ssh/keys/tekops_key.pub
