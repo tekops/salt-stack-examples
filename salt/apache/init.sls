@@ -6,7 +6,7 @@ apache2:
     {% endif %}
   service:
     - running
-    {% if grains['os_family'] == 'Redhat' %}
+    {% if grains['os_family'] == 'RedHat' %}
     - name: httpd
     {% endif %}
     - enable: True
